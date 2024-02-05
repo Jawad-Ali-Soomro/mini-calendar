@@ -3,9 +3,9 @@
   <br />
   <br />
 
-  <h2 align="center">Jawad - Portfolio Website</h2>
+  <h2 align="center">mini calendar</h2>
 
-A fully responsive personal portfolio website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+A fully responsive mini calendar website as a challenge, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
 </div>
 
@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Jawad** locally, run this command on your git bash:
+To run **mini calendar** locally, run this command on your git bash:
 
 Linux and macOS:
 
