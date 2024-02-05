@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="month-name"></h1>
+        <h2 id="day-name""></h2>
+        <h1 id="day-number"></h1>
+        <h2 id="year"></h2>
+    </div>
+  </body>
+</html>
+
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container{
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .container #month-name{
+    padding: 10px;
+    background: orangered;
+    color: white;
+    margin: 0;
+  }
+  .container #day-number{
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<script>
+  const monthNameEl = document.getElementById("month-name");
+  const dayNameEl = document.getElementById("day-name");
+  const dayNumEl = document.getElementById("day-number");
+  const yearEl = document.getElementById("year");
+
+  const date = new Date();
+  const month = date.getMonth();
+  monthNameEl.innerText = date.toLocaleString("en", {
+    month: "long",
+  });
+
+  dayNameEl.innerText = date.toLocaleString("en", {
+    weekday: "long",
+  });
+
+  dayNumEl.innerText = date.getDate();
+
+  yearEl.innerText = date.getFullYear();
+</script>
